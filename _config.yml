@@ -3,3 +3,4 @@ plugins:
 - jekyll-remote-theme
 title: [Ryan Miller's SNHU CS 499 Capstone]
 description: [This is my capstone and final project for the SNHU Computer Science program]
+show_downloads: [false]
