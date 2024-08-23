@@ -38,6 +38,14 @@ I have taken many classes throughout my time in this program, but the courses I 
 
 # Original Artifacts
 * * *
+### Software Engineering and Design
+The C++ program I selected for enhancement is a program that I reverse engineered from legacy code as part of the final project for CS 410 Software Reverse Engineering. It is a simple program that runs in a terminal window. It is designed to allow “SNHU Investments”, a fictional investment company that offers brokerage and retirement services, to view and edit the service options they offer to specific clients.
+
+The following image illustrates a sample of the terminal output and user input for this artifact in its original state:
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+
 
 # Enhanced Artifacts
 * * *
