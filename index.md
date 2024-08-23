@@ -88,6 +88,8 @@ The following is an image of the main screen where users can make edits to clien
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
+This repository for this artifact can be found HERE.
+
 ### Algorithms and Data Structures
 Prior to enhancement this artifact contained functions that literally defined the position of the points and triangles needed to draw cylinders. This involved specifying the coordinate locations for each and every point in the 3D shape line by line. This is both an inefficient time-consuming process. In an effort to improve the cylinder generation function and make it possible to upscale the polygonal resolution of the cylinder just by changing a few values, I chose to define an algorithm that would dynamically generate and texture the points and triangles of the cylinder based on a few easily changed values that determine the shape's polygonal resolution. This process involved properly managing and storing all of the relevant generated point data for the cylinder. Additionally, I decided to break up and reorganize the original single cpp file into a series of header files and implementations that allowed me to move the functions for mesh generation, shader creation/destruction, and texture creation/destruction into their own separate files. The result was better looking and hi poly shapes that helped better communicate the representation of each object in the scene, and a more well organized and easier to follow project architecture.
 
@@ -104,6 +106,8 @@ Part of the new function used to generate and texture the points of the cylinder
 System.out.printf("");
 ```
 
+This repository for this artifact can be found HERE.
+
 ### Databases
 This application was originally created to allow users to register for and sign into accounts and keep track of various inventory entries. The original program solved this problem in a simple sense, but there were some issues, namely when a user registered and logged into their account, they would have access to inventory items added and edited by other accounts. Additionally, the inventory management screen did not have any of the basic search and sorting functions that consumers have come to expect from tools that allow them to keep track of and analyze lists of items. I enhanced this application by first refactoring the inventory database and queries, that I had previously built using Room, to add a user ID field to inventory item entries and allow the user ID to be used as a means for filtering the inventory item entries so that whenever a user logged in to their account, they would only see the entries that have their user ID tied to them. I then refactored the login process to pull the user ID upon login, and pass it to the class for the inventory screen so that the currently logged in user can be persistently tracked. I then added queries to the inventory database to support search and sorting functionality, and then added the needed search bar and drop down menu to the inventory screen UI.
 
@@ -119,6 +123,8 @@ Enhanced Inventory queries:
 // Java code with syntax highlighting
 System.out.printf("");
 ```
+
+This repository for this artifact can be found HERE.
  
 # Artifact Narratives
 * * *
