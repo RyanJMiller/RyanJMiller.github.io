@@ -47,11 +47,16 @@ This repository for this artifact can be found HERE.
 ### Algorithms and Data Structures
 The OpenGL project I selected for enhancement is my final project from CS 330 Computational Graphics and Visualization. The project was created using Visual Studio The project is composed of a single source cpp file and 5 images used as textures for 3D objects. When run, it draws a navigable 3D scene with a several 3D shapes representing an orange, a measuring cup, and a digital camera all sitting on a paper towel. One important note here is that while the points for the sphere are generated using for loops, the cylinders are all literally defined and very low-poly cylinders as a result.
 
-The following images display the 3D scene and a portion of the function used to literally define the points of the cylinder:
+The following images display the 3D scene:
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+Part of the original function used to literally define the points of the cylinder:
+
+```c++
+// c++ code with syntax highlighting
+System.out.printf("");
+```
 
 ### Databases
 The Android mobile application I selected for enhancement is sourced from my final project from CS 360 Mobile Architecture and Programming. When deployed on an Android device, this application will allow you to register an account with a password and username, login, and create, edit, and delete inventory entries. Unfortunately, the original artifact allows any logged in user to view and modify the same set of entries even if they were created on another user's account.
