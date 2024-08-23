@@ -80,10 +80,45 @@ This repository for this artifact can be found HERE.
 * * *
 
 ### Software Engineering and Design
+The simplicity of the first artifact meant, to me, that it would be the easiest to do more with. I could expand upon it and take the oppurtunity to learn some new things without being concerned about the project being too much work for the time table. Ultimately I chose to first translate the C++ program into Java, retaining the original functionality of the program, and then replace the terminal window interface loop with a GUI to simplify the experience for the user using the Javax Swing library. Additionally, there were issues with the existing login system. The original artifact had the password stored in plain text as a string within the program. I enchanced the login feature by first salting and then hashing the original password and then storing the salt and hash as attributes under an Account class. I added thorough input validation on the username and password fields, and created several methods to handle login authentication. Finally, I ensured that the whole application was properly subdivided and organized into different java files and packages. All of the classes related to user authentication and input validation are contained in a util (utilities) package, the Account class is stored in a models package, and the driver file as well as all of the classes associated with the different screens of the GUI are stored together. In it's completed state, the application now has more secure login authentication, includes an easy to use main screen that lists all of the clients and allows the user to edit the selected service option for any client. 
+
+These enhancements demonstrate my proficiency in translating a program from one programming language to another and in user friendly GUI development. These enhancements not only improved the usability of the system but also ensured that all functionalities from the original program were retained and even enhanced. By translating the program from C++ to Java, I demonstrated my ability to design and evaluate computing solutions to ensure the functionality and performance of the system. I also ensured that the new artifact is well commented and easy to follow. Implementing user authentication and following best practices highlighted the importance of a security mindset during the development process.
+
+The following is an image of the main screen where users can make edits to client service selections:
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
 ### Algorithms and Data Structures
+Prior to enhancement this artifact contained functions that literally defined the position of the points and triangles needed to draw cylinders. This involved specifying the coordinate locations for each and every point in the 3D shape line by line. This is both an inefficient time-consuming process. In an effort to improve the cylinder generation function and make it possible to upscale the polygonal resolution of the cylinder just by changing a few values, I chose to define an algorithm that would dynamically generate and texture the points and triangles of the cylinder based on a few easily changed values that determine the shape's polygonal resolution. This process involved properly managing and storing all of the relevant generated point data for the cylinder. Additionally, I decided to break up and reorganize the original single cpp file into a series of header files and implementations that allowed me to move the functions for mesh generation, shader creation/destruction, and texture creation/destruction into their own separate files. The result was better looking and hi poly shapes that helped better communicate the representation of each object in the scene, and a more well organized and easier to follow project architecture.
+
+These enhancements demonstrate my ability to apply algorithmic solutions and manage data structures in a practical context, improving the overall quality and performance of the program. I had to develop an algorithm for dynamic shape generation, efficiently manage and store the generated vertices, and demonstrate an understanding of more advanced OpenGL concepts.
+
+The following is an image of the 3D scene after making the enhancements:
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+Part of the new function used to generate and texture the points of the cylinder:
+
+```java
+// Java code with syntax highlighting
+System.out.printf("");
+```
 
 ### Databases
+This application was originally created to allow users to register for and sign into accounts and keep track of various inventory entries. The original program solved this problem in a simple sense, but there were some issues, namely when a user registered and logged into their account, they would have access to inventory items added and edited by other accounts. Additionally, the inventory management screen did not have any of the basic search and sorting functions that consumers have come to expect from tools that allow them to keep track of and analyze lists of items. I enhanced this application by first refactoring the inventory database and queries, that I had previously built using Room, to add a user ID field to inventory item entries and allow the user ID to be used as a means for filtering the inventory item entries so that whenever a user logged in to their account, they would only see the entries that have their user ID tied to them. I then refactored the login process to pull the user ID upon login, and pass it to the class for the inventory screen so that the currently logged in user can be persistently tracked. I then added queries to the inventory database to support search and sorting functionality, and then added the needed search bar and drop down menu to the inventory screen UI.
+
+These enhancements highlight my proficiency in designing database solutions and managing and improving upon an existing DBMS. I also felt that the enhancements would demonstrate a security mindset in my work and specifically in properly securing the data entered and edited by individual users. These enhancements not only improved the usability of the inventory management application but also ensured that user entries would be better protected from tampering by other accounts. From the moment a user logs in, their unique ID is tracked and used across the program to ensure that they only have access to their information. There are some minor tweaks I still want to make in polishing, including one issue I discovered late in testing where setting a sorting option and then using the search function can cause the items to revert to listing in ascending order by their item ID numbers, and this breaks the selected sort option until another sort option is selected. Overall though I believe I was able to clearly demonstrate my proficiency in database management, Android development, and UI design.
+
+The following is an image of the enhanced inventory screen:
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+Enhanced Inventory queries:
+
+```java
+// Java code with syntax highlighting
+System.out.printf("");
+```
  
 # Artifact Narratives
 * * *
