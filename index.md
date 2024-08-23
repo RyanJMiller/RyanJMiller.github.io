@@ -21,13 +21,13 @@ As an engineer, I place great value in clarity. It is very important to me that 
 To help showcase my skills and everything I have learned over the last four years, I have selected three artifacts from my time at SNHU. These are all final projects from courses I completed, and the enhancements I have made to them will highlight my competence across the following outcomes:
 
 *   Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science
-*   
+  
 *   Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts
-*   
+  
 *   Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices
-*   
+  
 *   Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals
-*   
+  
 *   Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources
 
 I have taken many classes throughout my time in this program, but the courses I selected artifacts from where all courses in which I either learned something very new and challenging, or cases in which I felt I could have taken my work much further but didn’t for lack of time or scope. These artifacts include a C++ program that was translated to Java and then reformatted as a GUI, an OpenGL program in which I wrote and implemented an algorithm to dynamically generate and texture cylinders, and an Android mobile application for inventory management in which I refactored the existing database solution to tie entries to user accounts and provide support of sorting and searching functions on the database screen. These artifacts provide weight to this portfolio by clearly presenting my aforementioned skills in one place, without the need to download, examine, and run these applications yourself (though you can).
