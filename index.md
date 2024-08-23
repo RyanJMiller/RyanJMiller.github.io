@@ -58,6 +58,8 @@ Part of the original function used to literally define the points of the cylinde
 System.out.printf("");
 ```
 
+This repository for this artifact can be found HERE.
+
 ### Databases
 The Android mobile application I selected for enhancement is sourced from my final project from CS 360 Mobile Architecture and Programming. When deployed on an Android device, this application will allow you to register an account with a password and username, login, and create, edit, and delete inventory entries. Unfortunately, the original artifact allows any logged in user to view and modify the same set of entries even if they were created on another user's account.
 
@@ -72,7 +74,9 @@ Inventory database queries:
 System.out.printf("");
 ```
 
-# Enhanced Artifacts
+This repository for this artifact can be found HERE.
+
+# Enhancements
 * * *
 
 ### Software Engineering and Design
