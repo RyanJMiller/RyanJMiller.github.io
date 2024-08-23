@@ -22,7 +22,7 @@ To help showcase my skills and everything I have learned over the last four year
 
 LIST OUTCOMES
 
-I have taken many classes throughout my time in this program These artifacts include a C++ program that was translated to Java and then reformatted as a GUI, an OpenGL program in which I wrote and implemented an algorithm to dynamically generate and texture cylinders, and an Android mobile application for inventory management in which I refactored the existing database solution to tie entries to user accounts and provide support of sorting and searching functions on the database screen. These artifacts provide weight to this portfolio by clearly presenting my aforementioned skills in one place, without the need to download, examine, and run these applications yourself (though you can).
+I have taken many classes throughout my time in this program, but the courses I selected artifacts from where all courses in which I either learned something very new and challenging, or cases in which I felt I could have taken my work much further but didn’t for lack of time or scope. These artifacts include a C++ program that was translated to Java and then reformatted as a GUI, an OpenGL program in which I wrote and implemented an algorithm to dynamically generate and texture cylinders, and an Android mobile application for inventory management in which I refactored the existing database solution to tie entries to user accounts and provide support of sorting and searching functions on the database screen. These artifacts provide weight to this portfolio by clearly presenting my aforementioned skills in one place, without the need to download, examine, and run these applications yourself (though you can).
 
 
 ## Header 2
