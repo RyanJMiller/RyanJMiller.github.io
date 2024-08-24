@@ -37,7 +37,7 @@ The C++ program I selected for enhancement is a program that I reverse engineere
 
 The following image illustrates a sample of the terminal output and user input for this artifact in its original state:
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![SED_Old](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/SED_Old.png)
 
 This repository for this artifact can be found HERE.
 
@@ -46,7 +46,7 @@ The OpenGL project I selected for enhancement is my final project from CS 330 Co
 
 The following images display the 3D scene:
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![ADS_Old](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/ADS_Old.png)
 
 Part of the original function used to literally define the points of the cylinder (around 300+ lines in full):
 
@@ -88,7 +88,7 @@ The Android mobile application I selected for enhancement is sourced from my fin
 
 The following image displays the original inventory screen:
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Databases_Old](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/Databases_Old.jpg)
 
 Inventory database queries:
 
@@ -126,7 +126,7 @@ These enhancements demonstrate my proficiency in translating a program from one 
 
 The following is an image of the main screen where users can make edits to client service selections:
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![SED_New](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/SED_New.png)
 
 This repository for this artifact can be found HERE.
 
@@ -137,7 +137,7 @@ These enhancements demonstrate my ability to apply algorithmic solutions and man
 
 The following is an image of the 3D scene after making the enhancements:
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![ADS_New](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/ADS_New.png)
 
 First part (for the sake of brevity) of the new function used to generate and texture the points of the cylinder:
 
@@ -189,7 +189,7 @@ These enhancements highlight my proficiency in designing database solutions and 
 
 The following is an image of the enhanced inventory screen:
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Databases_New](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/Databases_New.jpg)
 
 Enhanced Inventory queries:
 
