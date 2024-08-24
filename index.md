@@ -2,10 +2,7 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
-
 [Link to another page](./another-page.html).
-
 
 # Professional Self-Assessment
 * * *
@@ -142,18 +139,9 @@ The following is an image of the 3D scene after making the enhancements:
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-Part of the new function used to generate and texture the points of the cylinder:
+First part (for the sake of brevity) of the new function used to generate and texture the points of the cylinder:
 
 ```c++
-/**
- * @brief Creates a 3D cylinder mesh.
- *
- * This function generates the vertices, normals, texture coordinates, and indices
- * for a 3D cylinder mesh and uploads them to the GPU. The cylinder is centered at
- * the origin, with its height extending along the y-axis.
- *
- * @param mesh The GLMesh structure to hold the mesh data.
- */
 void UCreateCylinder(GLMesh& mesh) {
     const int segments = 36;
     const float radius = 1.0f;
@@ -189,63 +177,6 @@ void UCreateCylinder(GLMesh& mesh) {
         vertices.push_back(z);                // normal z
         vertices.push_back(u);                // texture u
         vertices.push_back(0.0f);             // texture v
-    }
-
-    // Center top vertex (for caps)
-    vertices.push_back(0.0f);                // x
-    vertices.push_back(height / 2.0f);       // y
-    vertices.push_back(0.0f);                // z
-    vertices.push_back(0.0f);                // normal x
-    vertices.push_back(1.0f);                // normal y
-    vertices.push_back(0.0f);                // normal z
-    vertices.push_back(0.5f);                // texture u
-    vertices.push_back(0.5f);                // texture v
-
-    // Center bottom vertex (for caps)
-    vertices.push_back(0.0f);                // x
-    vertices.push_back(-height / 2.0f);      // y
-    vertices.push_back(0.0f);                // z
-    vertices.push_back(0.0f);                // normal x
-    vertices.push_back(-1.0f);               // normal y
-    vertices.push_back(0.0f);                // normal z
-    vertices.push_back(0.5f);                // texture u
-    vertices.push_back(0.5f);                // texture v
-
-    // Generate indices for the sides
-    for (int i = 0; i < segments; ++i) {
-        int top1 = i * 2;
-        int top2 = (i + 1) * 2;
-        int bottom1 = i * 2 + 1;
-        int bottom2 = (i + 1) * 2 + 1;
-
-        // Side triangles
-        indices.push_back(top1);
-        indices.push_back(bottom1);
-        indices.push_back(bottom2);
-
-        indices.push_back(top1);
-        indices.push_back(bottom2);
-        indices.push_back(top2);
-    }
-
-    // Generate indices for the top and bottom circles
-    int centerTopIndex = (segments + 1) * 2;
-    int centerBottomIndex = centerTopIndex + 1;
-    for (int i = 0; i < segments; ++i) {
-        int top1 = i * 2;
-        int top2 = (i + 1) * 2;
-        int bottom1 = i * 2 + 1;
-        int bottom2 = (i + 1) * 2 + 1;
-
-        // Top circle
-        indices.push_back(top1);
-        indices.push_back(top2);
-        indices.push_back(centerTopIndex);
-
-        // Bottom circle
-        indices.push_back(bottom1);
-        indices.push_back(centerBottomIndex);
-        indices.push_back(bottom2);
     }
 ```
 
