@@ -88,7 +88,7 @@ The Android mobile application I selected for enhancement is sourced from my fin
 
 The following image displays the original inventory screen:
 
-<img id="Databases_Old" src="assets/Databases_Old.png" alt="Original Inventory Screen" title="Original Inventory Screen" />
+<img id="Databases_Old" src="assets/Databases_Old.jpg" alt="Original Inventory Screen" title="Original Inventory Screen" />
 
 Inventory database queries:
 
@@ -189,7 +189,7 @@ These enhancements highlight my proficiency in designing database solutions and 
 
 The following is an image of the enhanced inventory screen:
 
-<img id="Databases_New" src="assets/Databases_New.png" alt="Enhanced Inventory Screen" title="Enhanced Inventory Screen" />
+<img id="Databases_New" src="assets/Databases_New.jpg" alt="Enhanced Inventory Screen" title="Enhanced Inventory Screen" />
 
 Enhanced Inventory queries:
 
