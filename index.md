@@ -27,6 +27,11 @@ I have taken many classes throughout my time in this program, but the courses I 
 
 <h1 id="code-review">Code Review</h1>
 * * *
+<div>
+  <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BmacMErsLck" 
+  title="Code Review Video" frameborder="0" allow="accelerometer; autoplay; 
+  clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <h1 id="original-artifacts">Original Artifacts</h1>
 * * *
