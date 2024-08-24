@@ -2,9 +2,7 @@
 layout: default
 ---
 
-[Link to another page](./another-page.html).
-
-# Professional Self-Assessment
+<h1 id="self-assessment">Professional Self-Assessment</h1>
 * * *
   My name is Ryan Miller. I started my Computer Science journey at Navarro College in Corsicana Texas in 2020. I received my A.S. in Computer Science from Navarro College in the fall of 2021. I then began working on my B.S. in Computer Science at Southern New Hampshire University in the fall 2022. I have a great deal of appreciation for both of the institutions I attended. Learning through two different approaches to computer science education has made me a more versatile engineer as I have my education has been equal parts practical and theory. Along the way, I have gained new skills and improved upon old ones. I have become increasingly detail oriented and mindful of best practices in my work. I have become proficient in multiple languages, including Java, C++, and Python. I have gained skills in database management and project planning. I am appropriately cautious in my approach to development, testing as I go, and I have become quite skilled at tracking down issues and bugs in my own code and in the work of others. I try to apply professional security standards in my work where possible, this makes up a big part of best practice to me and I try to implement security solutions in my work wherever I see a need. I do my best to keep all of my work well commented, organized, and easy to follow. I enjoy taking part in peer review processes, having my code reviewed and reviewing the code of others. 
 
@@ -27,10 +25,10 @@ layout: default
 I have taken many classes throughout my time in this program, but the courses I selected artifacts from where all courses in which I either learned something very new and challenging, or cases in which I felt I could have taken my work much further but didn’t for lack of time or scope. These artifacts include a C++ program that was translated to Java and then reformatted as a GUI, an OpenGL program in which I wrote and implemented an algorithm to dynamically generate and texture cylinders, and an Android mobile application for inventory management in which I refactored the existing database solution to tie entries to user accounts and provide support of sorting and searching functions on the database screen. These artifacts provide weight to this portfolio by clearly presenting my aforementioned skills in one place, without the need to download, examine, and run these applications yourself (though you can).
 
 
-# Code Review
+<h1 id="code-review">Code Review</h1>
 * * *
 
-# Original Artifacts
+<h1 id="original-artifacts">Original Artifacts</h1>
 * * *
 ### Software Engineering and Design
 The C++ program I selected for enhancement is a program that I reverse engineered from legacy code as part of the final project for CS 410 Software Reverse Engineering. It is a simple program that runs in a terminal window. It is designed to allow “SNHU Investments”, a fictional investment company that offers brokerage and retirement services, to view and edit the service options they offer to specific clients.
@@ -116,7 +114,7 @@ public interface InventoryDao {
 
 This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-360).
 
-# Enhancements
+<h1 id="enhancements">Enhancements</h1>
 * * *
 
 ### Software Engineering and Design
@@ -128,7 +126,7 @@ The following is an image of the main screen where users can make edits to clien
 
 <img id="SED_New" src="assets/SED_New.png" alt="SED Menu" title="SED Menu" />
 
-This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-330).
+This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-499-Software-Engineering-and-Design).
 
 ### Algorithms and Data Structures
 Prior to enhancement this artifact contained functions that literally defined the position of the points and triangles needed to draw cylinders. This involved specifying the coordinate locations for each and every point in the 3D shape line by line. This is both an inefficient time-consuming process. In an effort to improve the cylinder generation function and make it possible to upscale the polygonal resolution of the cylinder just by changing a few values, I chose to define an algorithm that would dynamically generate and texture the points and triangles of the cylinder based on a few easily changed values that determine the shape's polygonal resolution. This process involved properly managing and storing all of the relevant generated point data for the cylinder. Additionally, I decided to break up and reorganize the original single cpp file into a series of header files and implementations that allowed me to move the functions for mesh generation, shader creation/destruction, and texture creation/destruction into their own separate files. The result was better looking and hi poly shapes that helped better communicate the representation of each object in the scene, and a more well organized and easier to follow project architecture.
@@ -180,7 +178,7 @@ void UCreateCylinder(GLMesh& mesh) {
     }
 ```
 
-This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-330).
+This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-499-Algorithms-and-Data-Structures).
 
 ### Databases
 This application was originally created to allow users to register for and sign into accounts and keep track of various inventory entries. The original program solved this problem in a simple sense, but there were some issues, namely when a user registered and logged into their account, they would have access to inventory items added and edited by other accounts. Additionally, the inventory management screen did not have any of the basic search and sorting functions that consumers have come to expect from tools that allow them to keep track of and analyze lists of items. I enhanced this application by first refactoring the inventory database and queries, that I had previously built using Room, to add a user ID field to inventory item entries and allow the user ID to be used as a means for filtering the inventory item entries so that whenever a user logged in to their account, they would only see the entries that have their user ID tied to them. I then refactored the login process to pull the user ID upon login, and pass it to the class for the inventory screen so that the currently logged in user can be persistently tracked. I then added queries to the inventory database to support search and sorting functionality, and then added the needed search bar and drop down menu to the inventory screen UI.
@@ -237,9 +235,9 @@ public interface InventoryDao {
 }
 ```
 
-This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-330).
+This repository for this artifact can be found [here](https://github.com/RyanJMiller/CS-499-Databases).
  
-# Artifact Narratives
+<h1 id="artifact-narratives">Artifact Narratives</h1>
 * * *
 *   [Software Engineering and Design](docs/CS_499_Software_Engineering_and_Design_Narrative.pdf).
 *   
