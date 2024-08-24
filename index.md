@@ -39,6 +39,8 @@ The following image illustrates a sample of the terminal output and user input f
 
 ![SED_Old](https://github.com/RyanJMiller/RyanJMiller.github.io/blob/main/assets/SED_Old.png)
 
+<img id="SED_Old" src="assets/SED_Old.png" alt="SED Terminal Output" title="SED Terminal Output" />
+
 This repository for this artifact can be found HERE.
 
 ### Algorithms and Data Structures
