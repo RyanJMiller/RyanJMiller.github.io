@@ -240,7 +240,7 @@ This repository for this artifact can be found [here](https://github.com/RyanJMi
 <h1 id="artifact-narratives">Artifact Narratives</h1>
 * * *
 *   [Software Engineering and Design](docs/CS_499_Software_Engineering_and_Design_Narrative.pdf).
-*   
+
 *   [Algorithms and Data Structures](docs/CS_499_Algorithms_and_Data_Structures_Narrative.pdf).
-*   
+
 *   [Databases](docs/CS_499_Databases_Narrative.pdf).
