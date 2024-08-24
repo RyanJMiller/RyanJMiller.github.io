@@ -246,4 +246,3 @@ This repository for this artifact can be found [here](https://github.com/RyanJMi
 *   [Algorithms and Data Structures](docs/CS_499_Algorithms_and_Data_Structures_Narrative.pdf).
 *   
 *   [Databases](docs/CS_499_Databases_Narrative.pdf).
-
