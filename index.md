@@ -70,8 +70,25 @@ The following image displays the original inventory screen:
 Inventory database queries:
 
 ```java
-// Java code with syntax highlighting
-System.out.printf("");
+@Dao
+public interface InventoryDao {
+
+    // Query to retrieve all items from the inventory_items table
+    @Query("SELECT * FROM inventory_items")
+    LiveData<List<Inventory>> getAllItems();
+
+    // Insert a new item into the inventory_items table
+    @Insert
+    void insertItem(Inventory inventory);
+
+    // Update an existing item in the inventory_items table
+    @Update
+    void updateItem(Inventory inventory);
+
+    // Delete an item from the inventory_items table
+    @Delete
+    void deleteItem(Inventory inventory);
+}
 ```
 
 This repository for this artifact can be found HERE.
