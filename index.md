@@ -51,11 +51,37 @@ The following images display the 3D scene:
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-Part of the original function used to literally define the points of the cylinder:
+Part of the original function used to literally define the points of the cylinder (around 300+ lines in full):
 
 ```c++
-// c++ code with syntax highlighting
-System.out.printf("");
+// UCreateCylinder function
+void UCreateCylinder(GLMesh& mesh)
+{
+    // point positions and colors
+    GLfloat verts[] = {
+        // vertex positions   // normals         // texture coordinates
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -0.2f,  1.0f,  1.0f, 0.0f, 0.0f,  0.4f, 1.0f, // front face Vertex 1
+         1.0f, -0.5f,  0.9f,  1.0f, 0.0f, 0.0f,  0.25f, 0.95f, // front face Vertex 2
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -0.5f,  0.9f,  1.0f, 0.0f, 0.0f,  0.25f, 0.95f, // front face Vertex 2
+         1.0f, -0.75f, 0.75f, 1.0f, 0.0f, 0.0f,  0.125f, 0.875f, // front face Vertex 3
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -0.75f, 0.75f, 1.0f, 0.0f, 0.0f,  0.125f, 0.875f, // front face Vertex 3
+         1.0f, -0.9f,  0.5f,  1.0f, 0.0f, 0.0f,  0.05f, 0.75f, // front face Vertex 4
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -0.9f,  0.5f,  1.0f, 0.0f, 0.0f,  0.05f, 0.75f, // front face Vertex 4
+         1.0f, -1.0f,  0.2f,  1.0f, 0.0f, 0.0f,  0.0f, 0.6f, // front face Vertex 5
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -1.0f,  0.2f,  1.0f, 0.0f, 0.0f,  0.0f, 0.6f, // front face Vertex 5
+         1.0f, -1.0f, -0.2f,  1.0f, 0.0f, 0.0f,  0.0f, 0.4f, // front face Vertex 6
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -1.0f, -0.2f,  1.0f, 0.0f, 0.0f,  0.0f, 0.4f, // front face Vertex 6
+         1.0f, -0.9f, -0.5f,  1.0f, 0.0f, 0.0f,  0.05f, 0.25f, // front face Vertex 7
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f, 0.0f,  0.5f, 0.5f, // front face Vertex 0
+         1.0f, -0.9f, -0.5f,  1.0f, 0.0f, 0.0f,  0.05f, 0.25f, // front face Vertex 7
+         1.0f, -0.75f, -0.75f,  1.0f, 0.0f, 0.0f,  0.125f, 0.125f, // front face Vertex 8
+         1.0f,  0.0f,  0.0f,  1.0f, 0.0f...
 ```
 
 This repository for this artifact can be found HERE.
@@ -118,9 +144,109 @@ The following is an image of the 3D scene after making the enhancements:
 
 Part of the new function used to generate and texture the points of the cylinder:
 
-```java
-// Java code with syntax highlighting
-System.out.printf("");
+```c++
+/**
+ * @brief Creates a 3D cylinder mesh.
+ *
+ * This function generates the vertices, normals, texture coordinates, and indices
+ * for a 3D cylinder mesh and uploads them to the GPU. The cylinder is centered at
+ * the origin, with its height extending along the y-axis.
+ *
+ * @param mesh The GLMesh structure to hold the mesh data.
+ */
+void UCreateCylinder(GLMesh& mesh) {
+    const int segments = 36;
+    const float radius = 1.0f;
+    const float height = 2.0f;
+    std::vector<GLfloat> vertices;
+    std::vector<GLuint> indices;
+
+    float angleStep = 2.0f * glm::pi<float>() / segments;
+
+    // Generate vertices and normals
+    for (int i = 0; i <= segments; ++i) {
+        float angle = i * angleStep;
+        float x = radius * cos(angle);
+        float z = radius * sin(angle);
+        float u = (float)i / segments;
+
+        // Top vertex
+        vertices.push_back(x);                // x
+        vertices.push_back(height / 2.0f);    // y
+        vertices.push_back(z);                // z
+        vertices.push_back(x);                // normal x (for smooth shading, use x and z)
+        vertices.push_back(0.0f);             // normal y
+        vertices.push_back(z);                // normal z
+        vertices.push_back(u);                // texture u
+        vertices.push_back(1.0f);             // texture v
+
+        // Bottom vertex
+        vertices.push_back(x);                // x
+        vertices.push_back(-height / 2.0f);   // y
+        vertices.push_back(z);                // z
+        vertices.push_back(x);                // normal x (for smooth shading, use x and z)
+        vertices.push_back(0.0f);             // normal y
+        vertices.push_back(z);                // normal z
+        vertices.push_back(u);                // texture u
+        vertices.push_back(0.0f);             // texture v
+    }
+
+    // Center top vertex (for caps)
+    vertices.push_back(0.0f);                // x
+    vertices.push_back(height / 2.0f);       // y
+    vertices.push_back(0.0f);                // z
+    vertices.push_back(0.0f);                // normal x
+    vertices.push_back(1.0f);                // normal y
+    vertices.push_back(0.0f);                // normal z
+    vertices.push_back(0.5f);                // texture u
+    vertices.push_back(0.5f);                // texture v
+
+    // Center bottom vertex (for caps)
+    vertices.push_back(0.0f);                // x
+    vertices.push_back(-height / 2.0f);      // y
+    vertices.push_back(0.0f);                // z
+    vertices.push_back(0.0f);                // normal x
+    vertices.push_back(-1.0f);               // normal y
+    vertices.push_back(0.0f);                // normal z
+    vertices.push_back(0.5f);                // texture u
+    vertices.push_back(0.5f);                // texture v
+
+    // Generate indices for the sides
+    for (int i = 0; i < segments; ++i) {
+        int top1 = i * 2;
+        int top2 = (i + 1) * 2;
+        int bottom1 = i * 2 + 1;
+        int bottom2 = (i + 1) * 2 + 1;
+
+        // Side triangles
+        indices.push_back(top1);
+        indices.push_back(bottom1);
+        indices.push_back(bottom2);
+
+        indices.push_back(top1);
+        indices.push_back(bottom2);
+        indices.push_back(top2);
+    }
+
+    // Generate indices for the top and bottom circles
+    int centerTopIndex = (segments + 1) * 2;
+    int centerBottomIndex = centerTopIndex + 1;
+    for (int i = 0; i < segments; ++i) {
+        int top1 = i * 2;
+        int top2 = (i + 1) * 2;
+        int bottom1 = i * 2 + 1;
+        int bottom2 = (i + 1) * 2 + 1;
+
+        // Top circle
+        indices.push_back(top1);
+        indices.push_back(top2);
+        indices.push_back(centerTopIndex);
+
+        // Bottom circle
+        indices.push_back(bottom1);
+        indices.push_back(centerBottomIndex);
+        indices.push_back(bottom2);
+    }
 ```
 
 This repository for this artifact can be found HERE.
